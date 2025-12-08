@@ -2,9 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const contactRoutes = require('./routes/contactRoutes');
-const wordingsRoutes = require('./routes/wordingsRoutes');
-const { getConnection } = require('./config/dbConnection');
+const contactRoutes = require('./contactRoutes');
+const wordingsRoutes = require('./wordingsRoutes');
+const { getConnection } = require('./dbConnection');
 
 const app = express();
 const allowedOrigins = [
